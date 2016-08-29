@@ -91,6 +91,40 @@ body {
 }
 /*END HEADER*/
 
+/*FOOTER*/
+.panel-footer{
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+
+.panel-footer div.row{
+    margin-bottom: 35px;
+}
+
+#hours, #address {
+    line-height: 2;
+}
+
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+#address p {
+    color: #557C3E;
+    font-size: .8em;
+    line-height: 1.8;
+}
+#testimonials {
+    font-style: italic;
+}
+#testimonials p:nth-child(2){
+    margin-top: 25px;
+}
+
+/*END FOOTER*/
+
 /*HOME PAGE*/
 #menu-tile, #specials-tile, #map-tile {
     height: 250px;
@@ -190,6 +224,22 @@ body {
       height: 20px;
   }
 
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
   #collapsable-nav a {
       font-size: 1.2em;
   }
@@ -197,8 +247,23 @@ body {
       font-size: 1em;
       margin-right: 5px;
   }
+  /*END HEADER*/
+
+  /*FOOTER*/
+  .panel-footer section{
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  .panel-footer section:nth-child(3){
+      margin-bottom: 0;
+  }
+  .panel-footer section hr {
+      width: 50%;
+  }
+  /*END FOOTER*/
 
   /*jumbotron*/
+  /*HOME PAGE*/
   .container .jumbotron {
       margin-top: 30px;
       padding: 0;
