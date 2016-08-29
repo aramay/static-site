@@ -67,12 +67,68 @@ body {
 }
 
 #phone a{
+    /*Phone number*/
     text-align: right;
     padding-bottom: 0;
 }
 
 #phone div{
+    /*We deliver*/
     color: #557C3E;
     text-align: right;
     padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    /*button in navbar*/
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle{
+    /*clear: right;*/
+    float: right;
+    margin-top: -30px;
+}
+/*END HEADER*/
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1{
+      /*Restaurant name*/
+      padding-top: 10px;
+      /*1 % of view port width*/
+      font-size: 5vw;
+  }
+  .navbar-brand p{
+      /*Kosher cert*/
+      font-size: .6em;
+      margin-top: 12px;
+  }
+  .navbar-brand p img {
+      /*Star K*/
+      height: 20px;
+  }
 }
