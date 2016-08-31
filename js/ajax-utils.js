@@ -16,7 +16,7 @@
     }
 
     // Make an ajax request
-    ajaxUtils.sendGetRequest = function(requestUrl, responseHandler){
+    $ajaxUtils.sendGetRequest = function(requestUrl, responseHandler){
 
         var request = getRequestObject();
 
@@ -30,7 +30,7 @@
     };
 
     function handleResponse(request, responseHandler) {
-        if (request.readyState == 4 && request.status == 200) {
+        if ((request.readyState == 4) && (request.status == 200)) {
             responseHandler(request);
         }
     }
