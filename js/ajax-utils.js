@@ -1,6 +1,7 @@
-(function(global){
-    var ajaxUtils = {};
+(function (global){
 
+    var ajaxUtils = {};
+// debugger;
     // Returns an HTTP request object
     function getRequestObject(){
         if (window.XMLHttpRequest) {
@@ -16,7 +17,7 @@
     }
 
     // Make an ajax request
-    $ajaxUtils.sendGetRequest = function(requestUrl, responseHandler){
+    ajaxUtils.sendGetRequest = function(requestUrl, responseHandler){
 
         var request = getRequestObject();
 
@@ -36,7 +37,8 @@
     }
 
     // Expose utility to the global object
+    // global.$ajaxUtils = ajaxUtils;
     global.$ajaxUtils = ajaxUtils;
     // console.log(ajaxUtils);
 
-}(window));
+}) (window);
